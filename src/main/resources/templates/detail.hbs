@@ -1,0 +1,51 @@
+{{#partial "content"}}
+        <section>
+            <div class="container">
+                <div class="entry-list single">
+                    <article>
+                        <h1>{{entry.title}}</h1>
+                        {{#if entry.tags}}
+                            <ul>
+                                {{#each entry.tags}}
+                                    <li><a href="/tags/{{this.slugTag}}"> {{this}}</a></li>
+                                {{/each}}
+                            </ul>
+                        {{/if}}
+                        <time datetime={{entry.date}}>{{entry.date}}</time>
+                        <div class="entry">
+                            {{{entry.entry}}}
+                            <p><a class="link" href="/{{entry.slug}}/edit">Edit Entry</a></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="entry-comments">
+            <div class="container">
+                    <h2>Comments</h2>
+                {{#each entry.comments}}
+                    <div class="comment">
+                        {{#if creator}}
+                        <strong>{{creator}}</strong>
+                        {{else}}
+                            <strong>Anonymous</strong>
+                        {{/if}}
+
+                        <time datetime={{date}}>{{date}}</time>
+                        <p>{{{comment}}}</p>
+                    </div>
+                {{/each}}
+                    <div class="new-comment">
+                        <form action="/{{entry.slug}}" method="post">
+                              <label for="name"> Name</label>
+                              <input type="text" name="name"><br>
+                              <label for="comment">Comment</label>
+                              <textarea rows="5" name="comment"></textarea>
+                              <input type="submit" value="Post Comment" class="button">
+                        </form>
+                    </div>
+            </div>
+        </section>
+{{/partial}}
+
+{{> base.hbs}}
