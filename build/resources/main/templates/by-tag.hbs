@@ -7,7 +7,7 @@
                         <h2><a href="/{{slug}}">{{ title }}</a></h2>
                         <ul>
                         {{#each this.tags}}
-                            <li><a href="/tags/{{this.slugTag}}"> {{this}}</a></li>
+                            <li class="button tag"><a href="/tags/{{this.slugTag}}"> {{this}}</a></li>
                         {{/each}}
                         </ul>
                         <time datetime="{{date}}">{{date}}</time>

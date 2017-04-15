@@ -13,40 +13,43 @@ body {
 .container {
 	margin: 0 auto;
 	padding: 0 25px;
-	background: #FFF;
+	background: #f7f6f4;
 }
 header .site-header {
 	border-bottom: 1px solid #d1d1d1;
 	margin: 0 auto;
-	height: 95px;
+	height: 200px;
+	background: #FFF
 }
+
 header .logo {
 	border: 5px solid #000;
 	text-decoration: none;
-	color: #000;
+	color: #f44283;
 	font-size: 21px;
 	font-weight: bold;
 	padding: 5px 10px;
-	margin: 24px 0 0 0;
+	margin: 75px 0 0 0;
 	float: left;
 	text-transform: uppercase;
 	font-family: 'Noto Sans', sans-serif;
 }
+
 header .new-entry {
 	float: right;
-	margin: 25px 0 0 0;
+	margin: 75px 0 0 0;
 }
 footer {
-	background: #444;
+	background: #c10143;
 	height: 30px;
 	text-align: center;
 	padding: 35px 0;
 	color: #999;
 }
 footer a {
-	color: #999;
+	color: #000;
 	text-decoration: none;
-	border-bottom: 2px solid #666;
+	border-bottom: 2px solid #000;
 	padding-bottom: 1px;
 }
 
@@ -63,7 +66,7 @@ footer a {
 	border: 3px solid #000;
 	border-radius: 4px;
 	text-decoration: none;
-	color: #FFF;
+	color: #f44283;
 	font-weight: bold;
 	font-size: 13px;
 	font-family: 'Noto Sans', sans-serif;
@@ -82,6 +85,32 @@ footer a {
 	outline: 0;
 }
 
+ul.tag{
+    list-style-type: none;
+    height: 50px;
+    margin:0;
+    padding: 0;
+}
+
+li.button.tag{
+    display: inline-block;
+    padding: 8px;
+
+}
+li.button.tag a{
+    color: #ffffff;
+}
+
+li.button.tag:nth-child(even) a{
+     color: #f44283;
+}
+
+a.button.delete {
+    color: #000;
+    background: #f74545;
+    border-color:#f74545;
+
+}
 
 
 /* ==========================================================================
@@ -110,7 +139,7 @@ p {
 	line-height: 1.8em;
 }
 p a {
-	border-bottom: 2px solid #c1c1c1;
+	border-bottom: 2px solid #f44283;
 	padding: 0;
 }
 a.link {
@@ -121,21 +150,6 @@ a.link {
 	font-family: 'Noto Sans', sans-serif;
 }
 
-ul {
-    list-style-type: none;
-    height: 50px;
-    margin:0;
-    padding: 0;
-}
-
-li {
-    display: inline-block;
-    padding: 8px;
-    background-color: #444;
-    color: white;
-    border-radius: 10%;
-
-}
 
 
 
@@ -156,6 +170,7 @@ li {
 .password h2 {
 	margin-bottom: 35px;
 }
+
 .entry-list article {
 	margin-bottom: 70px;
 	text-align: center;
@@ -166,10 +181,17 @@ li {
 .entry-list article h2 {
 	margin-bottom: 8px;
 }
+
 .entry-list article a {
 	text-decoration: none;
 	color: #000;
 }
+
+.entry-list article:nth-child(even) a {
+	text-decoration: none;
+	color: #f44283;
+}
+
 .entry-list time {
 	color: #888;
 }
@@ -189,7 +211,7 @@ li {
 	margin-bottom: 40px;
 }
 .entry-comments {
-	background: #f1f1f1;
+	background: #f7d7e2;
 	padding: 70px 0;
 }
 .entry-comments .container {

@@ -216,19 +216,6 @@ public class Main {
                 "Vestibulum pharetra tempor molestie. Integer sollicitudin ante ipsum, a luctus nisi egestas eu. Cras accumsan cursus ante, non dapibus tempor.<p>"
                 ,new Date()));
 
-        dao.add(blogEntry4 = new BlogEntry("Dude, where’s my car?",
-                "Morgan"
-                ,"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut rhoncus felis, vel tincidunt neque." +
-                "Vestibulum ut metus eleifend, malesuada nisl at, scelerisque sapien. " +
-                "Vivamus pharetra massa libero, sed feugiat turpis efficitur at.<p>" +
-                "<p>Cras egestas ac ipsum in posuere. Fusce suscipit, libero id malesuada placerat, " +
-                "orci velit semper metus, quis pulvinar sem nunc vel augue. In ornare tempor metus, sit amet congue justo porta et. " +
-                "Etiam pretium, sapien non fermentum consequat, <a href=\"\">dolor augue</a> gravida lacus, non accumsan lorem odio id risus. " +
-                "Vestibulum pharetra tempor molestie. Integer sollicitudin ante ipsum, a luctus nisi egestas eu. Cras accumsan cursus ante, non dapibus tempor.<p>"
-                ,new Date()));
-        blogEntry4.addTag("movie");
-        blogEntry4.addTag("reference");
-
 
 
 
